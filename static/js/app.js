@@ -5,7 +5,7 @@
 function buildMetaData(sample) {
 
     // get samples.json data using d3
-    d3.json("../../data/samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
         // console.log(data);
 
         // use .then to extract the sample's metadata
@@ -41,7 +41,7 @@ function buildMetaData(sample) {
 
 function buildBarChart(sample) {
 
-    d3.json("../../data/samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
 
         var samples = data.samples;
         // console.log(samples);
@@ -93,7 +93,7 @@ function buildBarChart(sample) {
 }
 
 function buildBubbleChart(sample) {
-    d3.json("../../data/samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
 
         var samples = data.samples;
         // console.log(samples);
@@ -149,7 +149,7 @@ function init() {
 
     // populate the list of options in the dropdown selector
     // using d3.json to get data
-    d3.json("../../data/samples.json").then((data) => {
+    d3.json("samples.json").then((data) => {
 
         // create variable for sample names
         var sampleNames = data.names;
